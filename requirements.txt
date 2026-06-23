@@ -1,1 +1,1 @@
-# Your requirements go here
+pillow==12.2.0
