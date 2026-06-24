@@ -35,7 +35,7 @@ def add_training_record():
         "training_name": training_name,
         "status": status
     }
-    training_records.append(record)
+    training_records.append(recorded)
 
     print("Record added.")
     print(f"Employee: {employee_name}")
