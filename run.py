@@ -16,18 +16,20 @@ def choose_menu_option():
     while choice not in ["1", "2", "3", "4", "5", "6"]:
         print("Invalid option. Please choose a valid menu item.")
         choice = input("Choose an option: ")
-    print(f"You selected option {choice}.")
+
     return choice
 
 
 def add_training_record():
     """Function to add a training record for an employee."""
-    employee_name = input("Enter employee name: ")
-    training_name = input("Enter training name: ")
+    employee_name = input("Enter employee name: ").strip()
+    training_name = input("Enter training name: ").strip()
+    status = input("Enter training status (Completed/In progress): ").strip()
 
     print("Record added:")
     print(f"Employee: {employee_name}")
     print(f"Training: {training_name}")
+    print(f"Status: {status}")
     print("")
 
 
@@ -62,9 +64,9 @@ def main():
         if choice == "1":
             add_training_record()
         elif choice == "2":
-            search_records()
-        elif choice == "3":
             view_records()
+        elif choice == "3":
+            search_records()
         elif choice == "4":
             print("Analysing records feature coming soon!")
         elif choice == "5":
