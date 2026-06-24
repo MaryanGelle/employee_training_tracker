@@ -1,5 +1,20 @@
+import gspread
+from google.oauth2.service_account import Credentials
 
-training_records = []
+SCOPE = [
+    "https://www.googleapis.com/auth/spreadsheets",
+    "https://www.googleapis.com/auth/drive.file",
+    "https://www.googleapis.com/auth/drive"
+]
+
+CREDS = Credentials.from_service_account_file('creds.json')
+SCOPED_CREDS = CREDS.with_scopes(SCOPE)
+GSPREAD_CLIENT = gspread.authorize(SCOPED_CREDS)
+SHEET = GSPREAD_CLIENT.open("employee_training_tracker")
+
+training_records_worksheet = SHEET.worksheet("training_records")
+
+data = training_records.get_all_records()
 
 
 def show_menu():
