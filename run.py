@@ -40,12 +40,13 @@ def search_records():
     """Function to search training records."""
     search_name = input("Enter name to search for: ").strip()
 
-   for record in training_records:
+    for record in training_records:
         if record['employee_name'].lower() == search_name:
             print(f"Record found for employee: {record['employee']}")
             print(f"Training: {record['training']}")
             return
     print("No record found.")
+
 
 def main():
     """Main function to run the Employee Training Tracker app."""
