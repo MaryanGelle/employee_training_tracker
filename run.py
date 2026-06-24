@@ -62,9 +62,13 @@ def main():
         if choice == "1":
             add_training_record()
         elif choice == "2":
+            search_records()
+        elif choice == "3":
             view_records()
         elif choice == "4":
             print("Analysing records feature coming soon!")
+        elif choice == "5":
+            print("Deleting records feature coming soon!")
         elif choice == "6":
             print("Exiting the app. Goodbye!")
             break
