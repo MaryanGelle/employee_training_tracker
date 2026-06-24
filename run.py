@@ -14,7 +14,7 @@ SHEET = GSPREAD_CLIENT.open("employee_training_tracker")
 
 training_records_worksheet = SHEET.worksheet("training_records")
 
-data = training_records.get_all_records()
+training_records = training_records_worksheet.get_all_records()
 
 
 def show_menu():
