@@ -3,15 +3,17 @@ def show_menu():
     print("Menu")
     print("1. Add training record")
     print("2. View records")
-    print("3. Analyse records")
-    print("4. Exit")
+    print("3. Search records")
+    print("4. Analyse records")
+    print("5. Delete records")
+    print("6. Exit")
 
 
 def choose_menu_option():
     """Function to prompt the user to choose a menu option."""
     choice = input("Choose an option: ")
     # Validate choices for the user
-    while choice not in ["1", "2", "3", "4"]:
+    while choice not in ["1", "2", "3", "4", "5", "6"]:
         print("Invalid option. Please choose a valid menu item.")
         choice = input("Choose an option: ")
     print(f"You selected option {choice}.")
@@ -34,6 +36,17 @@ def view_records():
     print("Viewing records feature coming soon!")
 
 
+def search_records():
+    """Function to search training records."""
+    search_name = input("Enter name to search for: ").strip()
+
+   for record in training_records:
+        if record['employee_name'].lower() == search_name:
+            print(f"Record found for employee: {record['employee']}")
+            print(f"Training: {record['training']}")
+            return
+    print("No record found.")
+
 def main():
     """Main function to run the Employee Training Tracker app."""
     print("Welcome to Employee Training Tracker")
@@ -49,9 +62,9 @@ def main():
             add_training_record()
         elif choice == "2":
             view_records()
-        elif choice == "3":
-            print("Analysing records feature coming soon!")
         elif choice == "4":
+            print("Analysing records feature coming soon!")
+        elif choice == "6":
             print("Exiting the app. Goodbye!")
             break
         else:
