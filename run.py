@@ -1,3 +1,7 @@
+
+training_records = []
+
+
 def show_menu():
     """Function to display the menu options."""
     print("Menu")
@@ -26,7 +30,14 @@ def add_training_record():
     training_name = input("Enter training name: ").strip()
     status = input("Enter training status (Completed/In progress): ").strip()
 
-    print("Record added:")
+    recorded = {
+        "employee_name": employee_name,
+        "training_name": training_name,
+        "status": status
+    }
+    training_records.append(record)
+
+    print("Record added.")
     print(f"Employee: {employee_name}")
     print(f"Training: {training_name}")
     print(f"Status: {status}")
@@ -34,8 +45,15 @@ def add_training_record():
 
 
 def view_records():
-    """Function to view training records (placeholder)."""
-    print("Viewing records feature coming soon!")
+    """Function to view all training records."""
+    if not training_records:
+        print("No records found.")
+        return
+
+    print("\nTraining Records:")
+    for index, record in enumerate(training_records, start=1):
+        print(
+            f"{index}. Employee: {record['employee_name']}, Training: {record['training_name']}, Status: {record['status']}")
 
 
 def search_records():
@@ -43,10 +61,11 @@ def search_records():
     search_name = input("Enter name to search for: ").strip()
 
     for record in training_records:
-        if record['employee_name'].lower() == search_name:
-            print(f"Record found for employee: {record['employee']}")
-            print(f"Training: {record['training']}")
+        if record['employee_name'].lower() == search_name.lower():
+            print(f"Record found for employee: {record['employee_name']}")
+            print(f"Training: {record['training_name']}")
             return
+
     print("No record found.")
 
 
