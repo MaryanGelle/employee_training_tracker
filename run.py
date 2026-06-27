@@ -79,14 +79,16 @@ def view_records():
 def search_records():
     """Function to search training records."""
     search_name = input("Enter name to search for: ").strip()
+    found = False
 
     for record in training_records:
         if record['employee_name'].lower() == search_name.lower():
-            print(f"Record found for employee: {record['employee_name']}")
+            print(f"\nRecord found for employee: {record['employee_name']}")
             print(f"Training: {record['training_name']}")
-            return
-
-    print("No record found.")
+            print(f"Status: {record['status']}")
+            found = True
+    if not found:
+        print("No record found.")
 
 
 def main():
