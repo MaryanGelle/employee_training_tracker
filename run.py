@@ -45,6 +45,11 @@ def add_training_record():
     training_name = input("Enter training name: ").strip()
     status = input("Enter training status (Completed/In progress): ").strip()
 
+    # Save to Google Sheet
+    new_record = [employee_name, training_name, status]
+    training_records_worksheet.append_row(new_record)
+
+    # Update the Python list
     recorded = {
         "employee_name": employee_name,
         "training_name": training_name,
