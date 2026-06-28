@@ -101,6 +101,29 @@ def search_records():
         print("No record found.")
 
 
+def analyse_records():
+    """Function to analyse training records."""
+    completed = 0
+    in_progress = 0
+    not_started = 0
+
+    for record in training_records:
+        status = record['status'].lower()
+        if status == "completed":
+            completed += 1
+        elif status == "in progress":
+            in_progress += 1
+        elif status == "not started":
+            not_started += 1
+    total_records = len(training_records)
+    print("\nTraining Records Analysis:")
+    print(f"Total Records: {total_records}")
+    print(f"Completed: {completed}")
+    print(f"In Progress: {in_progress}")
+    print(f"Not Started: {not_started}")
+    print("")
+
+
 def main():
     """Main function to run the Employee Training Tracker app."""
     print("Welcome to Employee Training Tracker")
@@ -119,7 +142,7 @@ def main():
         elif choice == "3":
             search_records()
         elif choice == "4":
-            print("Analysing records feature coming soon!")
+            analyse_records()
         elif choice == "5":
             print("Deleting records feature coming soon!")
         elif choice == "6":
