@@ -46,7 +46,7 @@ def add_training_record():
     employee_name = input("Enter employee name: ").strip()
     training_name = input("Enter training name: ").strip()
     status = input(
-        "Enter training status (Completed/In progress/Not stated): ").strip()
+        "Enter training status (Completed/In progress/Not started): ").strip()
 
     # Get current date and time
     record_date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -69,6 +69,7 @@ def add_training_record():
     print(f"Employee: {employee_name}")
     print(f"Training: {training_name}")
     print(f"Status: {status}")
+    print(f"Record Date: {record_date}")
     print("")
 
 
@@ -81,7 +82,7 @@ def view_records():
     print("\nTraining Records:")
     for index, record in enumerate(training_records, start=1):
         print(
-            f"{index}. Employee: {record['employee_name']}, Training: {record['training_name']}, Status: {record['status']}")
+            f"{index}. Employee: {record['employee_name']}, Training: {record['training_name']}, Status: {record['status']}, Record Date: {record['record_date']}")
 
 
 def search_records():
@@ -94,6 +95,7 @@ def search_records():
             print(f"\nRecord found for employee: {record['employee_name']}")
             print(f"Training: {record['training_name']}")
             print(f"Status: {record['status']}")
+            print(f"Record Date: {record['record_date']}")
             found = True
     if not found:
         print("No record found.")
