@@ -137,16 +137,23 @@ def delete_record():
 
     found = False
 
+    matching_numbers = []
+
     for index, record in enumerate(training_records):
         if record['employee_name'].lower() == search_name.lower():
             print(
                 f"{index + 1}. Employee: {record['employee_name']}, Training: {record['training_name']}, Status: {record['status']}, Record Date: {record['record_date']}")
             found = True
+            matching_numbers.append(index + 1)
     if not found:
         print("No record found.")
         return
 
     record_number = int(input("Enter the record number to delete: ").strip())
+    if record_number not in matching_numbers:
+        print("Invalid record number.")
+        return
+
     training_records.pop(int(record_number) - 1)
     # +1 because Google Sheets is 1-indexed
     training_records_worksheet.delete_rows(int(record_number) + 1)
