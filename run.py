@@ -45,7 +45,8 @@ def add_training_record():
     """Function to add a training record for an employee."""
     employee_name = input("Enter employee name: ").strip()
     training_name = input("Enter training name: ").strip()
-    status = input("Enter training status (Completed/In progress): ").strip()
+    status = input(
+        "Enter training status (Completed/In progress/Not stated): ").strip()
 
     # Get current date and time
     record_date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
