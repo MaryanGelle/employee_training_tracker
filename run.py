@@ -1,5 +1,7 @@
 import gspread
+import datetime
 from google.oauth2.service_account import Credentials
+
 
 SCOPE = [
     "https://www.googleapis.com/auth/spreadsheets",
@@ -45,16 +47,21 @@ def add_training_record():
     training_name = input("Enter training name: ").strip()
     status = input("Enter training status (Completed/In progress): ").strip()
 
+    # Get current date and time
+    record_date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+
     # Save to Google Sheet
-    new_record = [employee_name, training_name, status]
+    new_record = [employee_name, training_name, status, record_date]
     training_records_worksheet.append_row(new_record)
 
     # Update the Python list
     recorded = {
         "employee_name": employee_name,
         "training_name": training_name,
-        "status": status
+        "status": status,
+        "record_date": record_date
     }
+
     training_records.append(recorded)
 
     print("Record added.")
