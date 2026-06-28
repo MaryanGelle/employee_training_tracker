@@ -47,6 +47,10 @@ def add_training_record():
     training_name = input("Enter training name: ").strip()
     status = input(
         "Enter training status (Completed/In progress/Not started): ").strip()
+    while status.lower() not in ["completed", "in progress", "not started"]:
+        print("Invalid status. Please enter 'Completed', 'In progress', or 'Not started'.")
+        status = input(
+            "Enter training status (Completed/In progress/Not started): ").strip()
 
     # Get current date and time
     record_date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -124,6 +128,32 @@ def analyse_records():
     print("")
 
 
+def delete_record():
+    """Function to delete a training record."""
+    search_name = input(
+        "Enter name of employee whose record you want to delete: ").strip()
+
+    print("\nMatching records:")
+
+    found = False
+
+    for index, record in enumerate(training_records):
+        if record['employee_name'].lower() == search_name.lower():
+            print(
+                f"{index + 1}. Employee: {record['employee_name']}, Training: {record['training_name']}, Status: {record['status']}, Record Date: {record['record_date']}")
+            found = True
+    if not found:
+        print("No record found.")
+        return
+
+    record_number = int(input("Enter the record number to delete: ").strip())
+    training_records.pop(int(record_number) - 1)
+    # +1 because Google Sheets is 1-indexed
+    training_records_worksheet.delete_rows(int(record_number) + 1)
+
+    print("Record deleted successfully.")
+
+
 def main():
     """Main function to run the Employee Training Tracker app."""
     print("Welcome to Employee Training Tracker")
@@ -144,7 +174,7 @@ def main():
         elif choice == "4":
             analyse_records()
         elif choice == "5":
-            print("Deleting records feature coming soon!")
+            delete_record()
         elif choice == "6":
             print("Exiting the app. Goodbye!")
             break
