@@ -57,6 +57,12 @@ def add_training_record():
         print("Invalid status. Please enter 'Completed', 'In progress', or 'Not started'.")
         status = input(
             "Enter training status (Completed/In progress/Not started): ").strip()
+        if status.lower() == "completed":  # Make the status consistent in the Google Sheet
+            status = "Completed"
+        elif status.lower() == "in progress":
+            status = "In progress"
+        elif status.lower() == "not started":
+            status = "Not started"
 
     # Get current date and time
     record_date = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
