@@ -52,6 +52,7 @@ Below is an image of the Mock terminal:
 - [Future Features](#future-features)
 - [Credits](#credits)
 - [Acknowledgements](#acknowledgements)
+- [Author](#author)
 
 
 ## Overview
@@ -72,6 +73,7 @@ Below is an image of the Mock terminal:
 
 ## Deployment
 
+
 ## Future Features
 
 Future improvements that could be added to the application include:
@@ -91,5 +93,11 @@ Below you will find credit references to my sources for content, media and feedb
 
 
 ## Acknowledgments 
+
+- My Code Institute mentor for their guidance, encouragement and valuable feedback throughout the project.
+- The Code Institute tutors and Student Care for their support during the development of this project.
+- My family and friends for testing the application and providing valuable feedback.
+
+## Author
 This command-line application was made by Maryan Gelle (Developer) as a Project 2 Python for my FullStack Programme at Code Institute in 2026.
 
