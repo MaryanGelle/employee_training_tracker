@@ -73,16 +73,72 @@ The application focuses on:
 - Easy navigation between features.
 - Readable output using consistent formatting.
 
+![Main Menu](README.images/menu.png)
+
+
 ## Features
 
 The Employee Training Tracker includes the following features:
 
 - **Add Training Record** – Allows users to add a new employee training record to Google Sheets.
+  Example, Users can add a new employee training record by entering the employee name, training name and training status.
+
+![Add Record](README.images/added.record.png)
+
+![Add Record Google Sheets](README.images/google.sheets.added.png)
+
+All other added records in Google Sheets
+![Add Records Google Sheets](README.images/added.records.googlesheets.png)
+
 - **View Records** – Displays all stored training records.
+
+![View Record](README.images/view.record.png)
+
+
 - **Search Records** – Searches for an employee's training record by name.
+
+Search not found
+![Search Record Not Found](README.images/search.not.found.png)
+
+Search Found
+![Search Record Found](README.images/search.found.png)
+
 - **Analyse Records** – Calculates and displays training statistics and completion percentages.
+
+![Analyse Record](README.images/analyse.records.png)
+
+
 - **Delete Records** – Removes selected training records from both the application and Google Sheets.
+
+Delete successfully record
+
+![Delete Record](README.images/delete.successfully.png)
+
+
 - **Input Validation** – Prevents empty inputs and validates training status before saving data.
+
+Invalid Menu Choice Validation
+
+![Input Menu Choice Validation](README.images/invalid.menu.choice.png)
+
+
+Invalid Employee input Validation:
+![Blank Employee Validation](README.images/blank.employee.validation.png)
+
+Invalid Training name input Validation:
+![Blank Training name Validation](README.images/blank.training.name.validation.png)
+
+
+Invalid status: Validation
+
+![Status Input Validation](README.images/invalid.status.validation.png)
+
+
+Delete validation
+
+![Delete Record Invalid](README.images/delete.invalid.png)
+
+
 
 ## Data Model
 
