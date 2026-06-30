@@ -20,3 +20,56 @@ Below is an image of the Mock terminal:
 </div>
 
 <a id="contents"></a>
+## Contents
+
+- [Overview](#overview)
+- [User Experience UX](#user-experience-ux)
+  - [User Stories](#user-stories)
+  - [Project Goals](#project-goals)
+- [Features](#features)
+  - [Main Menu](#main-menu)
+  - [Add Training Record](#add-training-record)
+  - [View Records](#view-records)
+  - [Search Records](#search-records)
+  - [Analyse Records](#analyse-records)
+  - [Delete Records](#delete-records)
+  - [Input Validation](#input-validation)
+  - [Google Sheets Integration](#google-sheets-integration)
+- [Data Model](#data-model)
+- [Flowchart](#flowchart)
+- [Testing](#testing)
+  - [Manual Testing](#manual-testing)
+  - [PEP8 Validation](#pep8-validation)
+  - [Solved Bugs](#solved-bugs)
+  - [Remaining Bugs](#remaining-bugs)
+- [Technologies Used](#technologies-used)
+- [Deployment](#deployment)
+- [Future Features](#future-features)
+- [Credits](#credits)
+- [Acknowledgements](#acknowledgements)
+
+
+## Overview
+
+## User Experience UX
+
+## Features
+
+
+## Data Model
+
+## Flow Chart
+
+## Testing
+
+## Technologies Used
+
+
+## Deployment
+
+## Future Features
+
+## Credits
+
+## Acknowledgments 
+
