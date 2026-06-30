@@ -17,13 +17,16 @@ During development, the application successfully passed the PEP8 validation with
 
 ![Testing PEP8 CLEAR](README.images/p.validation.clear.png)
 
-After making further improvements to the application, including additional functionality and 
-formatting changes, several PEP8 line length warnings remained. These warnings do not affect 
-the functionality of the application, and the final application runs successfully.
+
+During development, I attempted to resolve all PEP8 warnings. However, some of the changes 
+made to fix line-length warnings caused the application to stop running correctly. To keep 
+the final project stable and functional, I reverted back to the last working version of the code.
+
+The final version contains minor line-length warnings, but these do not affect the functionality of the application. 
+The application runs successfully.
+
 
 ![Testing PEP8 Second Error](README.images/p.validation.later.png)
-
-
 
 
 ### User Story Testing
