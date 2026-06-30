@@ -78,8 +78,12 @@ Below is an image of the flowchart:
 
 ## Testing
 
-The testing process performed on the program can be found in [TESTING.md](TESTING.md). It includes manual testing, PEP8 validation, User story testing and testing for bugs.
+Testing was used to ensure quality and correct coding in order to create a functioning programme for our users experience.
+It includes manual testing, PEP8 validation, User story testing and testing for bugs.
 
+Please refer to [**_here_**](TESTING.md) for more information on testing the programme.
+
+[Back to top](#contents)
 
 ## Technologies Used
 
