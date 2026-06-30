@@ -66,6 +66,14 @@ Below is an image of the Mock terminal:
 
 ## Flow Chart
 
+In the creation of the Empployee Training Tracker program i created a flowchart to show the overall workflow and its programme logic.
+Below is an image of the flowchart:
+
+<div align="center">
+  <img src="README.images/flowchart.png" style="background-color: grey" alt="Flowchart of the application">
+</div>
+
+
 ## Testing
 
 
