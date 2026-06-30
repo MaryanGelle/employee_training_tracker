@@ -11,17 +11,19 @@ The above screenshot demonstrated input validation and successful programme exec
 
 ### PEP8 Validation
 
-![Testing PEP8 CLEAR](README.images/p.validation.clear.png)
 
 The project was validated using the Code Institute PEP8 Python Linter throughout development.
-
 During development, the application successfully passed the PEP8 validation with no errors.
 
-![Testing PEP8 Second Error](README.images/p.validation.later.png)
+![Testing PEP8 CLEAR](README.images/p.validation.clear.png)
 
 After making further improvements to the application, including additional functionality and 
 formatting changes, several PEP8 line length warnings remained. These warnings do not affect 
 the functionality of the application, and the final application runs successfully.
+
+![Testing PEP8 Second Error](README.images/p.validation.later.png)
+
+
 
 
 ### User Story Testing
