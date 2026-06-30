@@ -19,15 +19,23 @@ training_records_worksheet = SHEET.worksheet("training_records")
 training_records = training_records_worksheet.get_all_records()
 
 
+def print_line():
+    """Print a line of dashes for formatting."""
+    print("-" * 50)
+
+
 def show_menu():
     """Function to display the menu options."""
-    print("Menu")
+    print_line()
+    print("Employee Training Tracker Menu:")
+    print_line()
     print("1. Add training record")
     print("2. View records")
     print("3. Search records")
     print("4. Analyse records")
     print("5. Delete records")
     print("6. Exit")
+    print_line()
 
 
 def choose_menu_option():
@@ -81,7 +89,9 @@ def add_training_record():
 
     training_records.append(recorded)
 
-    print("Record added.")
+    print_line()
+    print("Training record added successfully!")
+    print_line()
     print(f"Employee: {employee_name}")
     print(f"Training: {training_name}")
     print(f"Status: {status}")
@@ -95,7 +105,9 @@ def view_records():
         print("No records found.")
         return
 
-    print("\nTraining Records:")
+    print_line()
+    print("Training Records:")
+    print_line()
     for index, record in enumerate(training_records, start=1):
         print(
             f"{index}. Employee: {record['employee_name']}, Training: {record['training_name']}, Status: {record['status']}, Record Date: {record['record_date']}")
@@ -108,7 +120,8 @@ def search_records():
 
     for record in training_records:
         if record['employee_name'].lower() == search_name.lower():
-            print(f"\nRecord found for employee: {record['employee_name']}")
+            print()
+            print(f"Employee: {record['employee_name']}")
             print(f"Training: {record['training_name']}")
             print(f"Status: {record['status']}")
             print(f"Record Date: {record['record_date']}")
@@ -145,7 +158,9 @@ def analyse_records():
     incomplete_training_percentage = (
         incomplete_training / total_records) * 100 if total_records > 0 else 0
 
-    print("\nTraining Records Analysis:")
+    print_line()
+    print("Training Records Analysis:")
+    print_line()
     print(f"Total Records: {total_records}")
     print(f"Completed: {completed}({completed_percentage:.1f}%)")
     print(f"In Progress: {in_progress}")
@@ -160,7 +175,9 @@ def delete_record():
     search_name = input(
         "Enter name of employee whose record you want to delete: ").strip()
 
-    print("\nMatching records:")
+    print_line()
+    print("Matching Records:")
+    print_line()
 
     found = False
 
@@ -191,7 +208,9 @@ def delete_record():
     # +1 because Google Sheets is 1-indexed
     training_records_worksheet.delete_rows(int(record_number) + 1)
 
+    print_line()
     print("Record deleted successfully.")
+    print_line()
 
 
 def main():
