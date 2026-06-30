@@ -74,7 +74,22 @@ Below is an image of the Mock terminal:
 
 ## Future Features
 
+Future improvements that could be added to the application include:
+- Edit an existing training record instead of deleting or re-entering the data.
+- Filter the training record according by training status.
+- Sort records alphabetically order or by training date.
+- Generate more detailed statistics or charts to help monitor the data.
+- Add user authentication for security reasons so only authorised users can manage the data.
+
 ## Credits
 
+Below you will find credit references to my sources for content, media and feedback.
+
+- Code Institute Python Essentials template.
+- Code Institute mock terminal template for Heroku deployment.
+- Google Sheets API and the gspread python library was used to store, retrieve and manage data.
+
+
 ## Acknowledgments 
+This command-line application was made by Maryan Gelle (Developer) as a Project 2 Python for my FullStack Programme at Code Institute in 2026.
 
