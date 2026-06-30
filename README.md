@@ -56,12 +56,48 @@ Below is an image of the Mock terminal:
 
 ## Overview
 
+The Employee Training Tracker is a command-line application developed in Python to help organisations 
+manage employee training records. The application allows users to add, view, search, analyse and delete 
+training records, with all data stored in Google Sheets. It was designed to provide a simple and efficient
+way of tracking employee training progress.
+
 ## User Experience UX
+
+The application was designed with simplicity and ease of use in mind. As a terminal-based application,
+users interact through a clear menu system and receive straightforward instructions throughout the programme.
+
+The application focuses on:
+- A simple and intuitive menu.
+- Clear prompts and confirmation messages.
+- Input validation to reduce user errors.
+- Easy navigation between features.
+- Readable output using consistent formatting.
 
 ## Features
 
+The Employee Training Tracker includes the following features:
+
+- **Add Training Record** – Allows users to add a new employee training record to Google Sheets.
+- **View Records** – Displays all stored training records.
+- **Search Records** – Searches for an employee's training record by name.
+- **Analyse Records** – Calculates and displays training statistics and completion percentages.
+- **Delete Records** – Removes selected training records from both the application and Google Sheets.
+- **Input Validation** – Prevents empty inputs and validates training status before saving data.
 
 ## Data Model
+
+The application stores all training records in a Google Sheets spreadsheet using the `gspread` library.
+
+Each record contains four fields:
+
+| Field         |       Description           |
+|---------------|-----------------------------|
+| Employee Name | The employee's full name. |
+| Training Name | The name of the completed or assigned training. |
+| Status        | The training status (Completed, In Progress or Not Started). |
+| Record Date   | The date and time the record was created. |
+
+Each row in the spreadsheet represents a single training record and is synchronised with the application whenever records are added, viewed, searched or deleted.
 
 ## Flow Chart
 
