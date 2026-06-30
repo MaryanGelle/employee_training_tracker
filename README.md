@@ -16,7 +16,7 @@ The Empployee Training Tracker program is written using python and is deployed o
 Below is an image of the Mock terminal:
 
 <div align="center">
-  <img src="README.images/mockup_terminal.png" style="background-color: black" alt="Mockup terminal">
+  <img src="README.images/mockup.png" style="background-color: black" alt="Mockup terminal">
 </div>
 
 # Live Project
