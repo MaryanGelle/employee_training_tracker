@@ -16,7 +16,7 @@ The Empployee Training Tracker program is written using python and is deployed o
 Below is an image of the Mock terminal:
 
 <div align="center">
-  <img src="README.images/mockup.png" style="background-color: black" alt="Mockup terminal">
+  <img src="README.images/mockup_terminal.png" style="background-color: black" alt="Mockup terminal">
 </div>
 
 # Live Project
@@ -106,6 +106,10 @@ Below is an image of the flowchart:
 ### Validation
 - CI Python Linter (PEP8)
 
+### Other
+
+- diagrams.net (flowchart)
+
 [Back to top](#contents)
 
 ## Deployment
@@ -151,6 +155,9 @@ Below you will find credit references to my sources for content, media and feedb
 - Code Institute Python Essentials template.
 - Code Institute mock terminal template for Heroku deployment.
 - Google Sheets API and the gspread python library was used to store, retrieve and manage data.
+
+Others
+- diagrams.net (flowchart)
 
 
 ## Acknowledgments 
