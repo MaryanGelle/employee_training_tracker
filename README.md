@@ -19,6 +19,11 @@ Below is an image of the Mock terminal:
   <img src="README.images/mockup.png" style="background-color: black" alt="Mockup terminal">
 </div>
 
+# Live Project
+**Live application:**  
+[Live Application](https://employee-training-tracker-952185589660.herokuapp.com/)
+
+
 <a id="contents"></a>
 ## Contents
 
