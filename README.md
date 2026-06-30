@@ -95,7 +95,7 @@ Below is an image of the Mock terminal:
 ### Validation
 - CI Python Linter (PEP8)
 
-
+[Back to top](#contents)
 
 ## Deployment
 
