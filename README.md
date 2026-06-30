@@ -68,6 +68,9 @@ Below is an image of the Mock terminal:
 
 ## Testing
 
+
+
+
 ## Technologies Used
 
 ### Programming Language
@@ -117,6 +120,10 @@ This project was deployed to Heroku using the following steps:
 - Connect the Github repository that contains the project.
 - Click **Deploy Branch**
 - Once the deployment is complete, click **Open App** to launch the application. 
+
+<div align="center">
+  <img src="README.images/open.app.png" style="background-color: white" alt="End of Debugging open app">
+</div>
 
     
 
