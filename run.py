@@ -44,8 +44,14 @@ def choose_menu_option():
 def add_training_record():
     """Function to add a training record for an employee."""
     employee_name = input("Enter employee name: ").strip()
+    while employee_name == "":  # Validate that the employee name is not empty
+        print("Employee name cannot be empty. Please enter a valid name.")
+        employee_name = input("Enter employee name: ").strip()
     training_name = input("Enter training name: ").strip()
-    status = input(
+    while training_name == "":  # Validate that the training name is not empty
+        print("Training name cannot be empty. Please enter a valid training name.")
+        training_name = input("Enter training name: ").strip()
+    status = input(  # validate that the status is one of the three options
         "Enter training status (Completed/In progress/Not started): ").strip()
     while status.lower() not in ["completed", "in progress", "not started"]:
         print("Invalid status. Please enter 'Completed', 'In progress', or 'Not started'.")
@@ -164,7 +170,13 @@ def delete_record():
         print("No record found.")
         return
 
-    record_number = int(input("Enter the record number to delete: ").strip())
+    record_number = input("Enter the record number to delete: ").strip()
+    while not record_number.isdigit():
+        print("Please enter a valid record number.")
+        record_number = input("Enter the record number to delete: ").strip()
+
+    record_number = int(record_number)
+    # Validate that the record number is in the list of matching records
     if record_number not in matching_numbers:
         print("Invalid record number.")
         return
