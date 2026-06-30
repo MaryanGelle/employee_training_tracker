@@ -45,6 +45,8 @@ Below is an image of the Mock terminal:
 - [Testing](#testing)
   - [Manual Testing](#manual-testing)
   - [PEP8 Validation](#pep8-validation)
+  - [User Story Testing](#user-story-testing)
+  - [Bugs](#bugs)
   - [Solved Bugs](#solved-bugs)
   - [Remaining Bugs](#remaining-bugs)
 - [Technologies Used](#technologies-used)
@@ -76,7 +78,7 @@ Below is an image of the flowchart:
 
 ## Testing
 
-
+The testing process performed on the program can be found in [TESTING.md](TESTING.md). It includes manual testing, PEP8 validation, User story testing and testing for bugs.
 
 
 ## Technologies Used
