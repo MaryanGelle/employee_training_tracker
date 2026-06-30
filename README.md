@@ -73,6 +73,26 @@ Below is an image of the Mock terminal:
 
 ## Deployment
 
+This project was deployed to Heroku using the following steps:
+
+- Sign in to your Heroku account.
+- Select **New** and choose **create new app**.
+- Enter a unique application name and select the appropriate region.
+- Click **Create app**.
+- Open the **Settings** tab.
+- Under **Config Vars**, add:
+ - 'PORT' with the value '8000'.
+ - 'CREDS' with the value content of the 'creds.json' file.
+- Under **Buildpacks**, add:
+ - Python
+ - Node.js
+- Open the **Deploy** tab.
+- Choose **Github** as the deployment method.
+- Connect the Github repository that contains the project.
+- Click **Deploy Branch**
+- Once the deployment is complete, click **Open App** to launch the application. 
+
+    
 
 ## Future Features
 
