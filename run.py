@@ -51,7 +51,7 @@ def choose_menu_option():
 
 def add_training_record():
     """Function to add a training record for an employee."""
-    employee_name = input("Enter employee name: ").strip()
+    employee_name = input("Enter employee name:\n ").strip()
     while employee_name == "":  # Validate that the employee name is not empty
         print("Employee name cannot be empty. Please enter a valid name.")
         employee_name = input("Enter employee name: ").strip()
