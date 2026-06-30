@@ -120,11 +120,26 @@ def analyse_records():
         elif status == "not started":
             not_started += 1
     total_records = len(training_records)
+    if total_records > 0:
+        completed_percentage = (completed / total_records) * 100
+        in_progress_percentage = (in_progress / total_records) * 100
+        not_started_percentage = (not_started / total_records) * 100
+    else:
+        completed_percentage = 0
+        in_progress_percentage = 0
+        not_started_percentage = 0
+
+    incomplete_training = in_progress + not_started
+    incomplete_training_percentage = (
+        incomplete_training / total_records) * 100 if total_records > 0 else 0
+
     print("\nTraining Records Analysis:")
     print(f"Total Records: {total_records}")
-    print(f"Completed: {completed}")
+    print(f"Completed: {completed}({completed_percentage:.1f}%)")
     print(f"In Progress: {in_progress}")
     print(f"Not Started: {not_started}")
+    print(
+        f"Incomplete Training Records: {incomplete_training} ({incomplete_training_percentage:.1f}%)")
     print("")
 
 
