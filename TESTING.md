@@ -31,6 +31,12 @@ The application runs successfully.
 
 ### User Story Testing
 
+The application was manually tested against each user story to ensure that all planned functionality 
+worked as intended. The table below summarises the tests performed, the expected outcome, the actual 
+result, and whether each user story passed.
+
+![User Story Testing ](README.images/user.testing.png)
+
 #### Bugs Encountered and Fixes
 During development, several issues were identified through manual testing and were successfully resolved.
 
