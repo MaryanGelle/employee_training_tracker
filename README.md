@@ -15,9 +15,7 @@ Users can:
 The Empployee Training Tracker program is written using python and is deployed on heroku using Node.js.
 Below is an image of the Mock terminal:
 
-<div align="center">
-  <img src="README.images/mockup.png" style="background-color: black" alt="Mockup terminal">
-</div>
+![Mockup Terminal](README.images/mockup.png)
 
 # Live Project
 **Live application:**  
@@ -71,10 +69,8 @@ Below is an image of the Mock terminal:
 In the creation of the Empployee Training Tracker program i created a flowchart to show the overall workflow and its programme logic.
 Below is an image of the flowchart:
 
-<div align="center">
-  <img src="README.images/flowchart.png" style="background-color: grey" alt="Flowchart of the application">
-</div>
 
+![Flowchart](README.images/flowchart.png)
 
 ## Testing
 
@@ -143,7 +139,8 @@ This project was deployed to Heroku using the following steps:
   <img src="README.images/open.app.png" style="background-color: white" alt="End of Debugging open app">
 </div>
 
-    
+![Debugging App](README.images/open.app.png) 
+
 
 ## Future Features
 
