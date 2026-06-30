@@ -11,6 +11,13 @@ The above screenshot demonstrated input validation and successful programme exec
 
 ### PEP8 Validation
 
+![Testing PEP8 CLEAR](README.images/p.validation.clear.png)
+
+
+![Testing PEP8 Second Error](README.images/p.validation.later.png)
+
+
+
 ### User Story Testing
 
 #### Bugs Encountered and Fixes
