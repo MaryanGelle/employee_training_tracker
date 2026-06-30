@@ -70,6 +70,32 @@ Below is an image of the Mock terminal:
 
 ## Technologies Used
 
+### Programming Language
+- Python 3
+
+### Libraries 
+- gspread - Used to read, write and delete data.
+- google-auth - Used to authenticate the application Google Sheets.
+- datetime - Used to automatically record the date and time of each training record that is created.
+
+### APIs
+- Google Sheets API
+
+### Development Tools
+- Visual Studio Code
+- Github
+- Git
+- Heroku
+- Google Clout Platform
+
+### Python Packages
+- Autopep8 - Used to format the code according to PEP 8 Guidelines.
+- Pylance - Used for code analysi and IntelliSense during development. 
+
+### Validation
+- CI Python Linter (PEP8)
+
+
 
 ## Deployment
 
