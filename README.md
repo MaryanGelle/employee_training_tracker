@@ -1,6 +1,6 @@
 # Employee Training Tracker
 
-The Employee Training Tracker is a userfriendly command-line application developed using Python. It allows
+The Employee Training Tracker is a user-friendly command-line application developed using Python. It allows
 users to manage employee training records stored in Google sheets through an easy to use terminal interface.
 The application is designed for HR team and managers to keep track of employees training without having to 
 edit the Google Sheets manually.
@@ -56,10 +56,11 @@ Below is an image of the Mock terminal:
 
 ## Overview
 
-The Employee Training Tracker is a command-line application developed in Python to help organisations 
-manage employee training records. The application allows users to add, view, search, analyse and delete 
-training records, with all data stored in Google Sheets. It was designed to provide a simple and efficient
-way of tracking employee training progress.
+The aim of this project was to develop a simple and practical command-line application that demonstrates
+the use of Python for data management. The application integrates with Google Sheets to store employee 
+training records, allowing users to manage training information through an interactive terminal interface.
+It demonstrates key programming concepts including functions, input validation, loops, conditional statements,
+data handling, and external API integration.
 
 ## User Experience UX
 
@@ -97,10 +98,8 @@ All other added records in Google Sheets.
 
 - **Search Records** – Searches for an employee's training record by name.
 
-Search not found
-![Search Record Not Found](README.images/search.not.found.png)
+Search Records:
 
-Search Found
 ![Search Record Found](README.images/search.found.png)
 
 - **Analyse Records** – Calculates and displays training statistics and completion percentages.
@@ -123,9 +122,11 @@ Invalid Menu Choice Validation
 
 
 Invalid Employee Input Validation:
+
 ![Blank Employee Validation](README.images/blank.employee.validation.png)
 
 Invalid Training name input Validation:
+
 ![Blank Training name Validation](README.images/blank.training.name.validation.png)
 
 
@@ -133,6 +134,10 @@ Invalid status: validation
 
 ![Status Input Validation](README.images/invalid.status.validation.png)
 
+Invalid Search: Validation 
+
+Search not found
+![Search Record Not Found](README.images/search.not.found.png)
 
 Delete validation
 
