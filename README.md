@@ -12,7 +12,7 @@ Users can:
 - analyse training progress
 - delete records
 
-The Empployee Training Tracker program is written using python and is deployed on heroku using Node.js.
+The Employee Training Tracker program is written using python and is deployed on heroku using Node.js.
 Below is an image of the Mock terminal:
 
 ![Mockup Terminal](README.images/mockup.png)
@@ -81,13 +81,13 @@ The application focuses on:
 The Employee Training Tracker includes the following features:
 
 - **Add Training Record** – Allows users to add a new employee training record to Google Sheets.
-  Example, Users can add a new employee training record by entering the employee name, training name and training status.
+  For example, Users can add a new employee training record by entering the employee name, training name and training status.
 
 ![Add Record](README.images/added.record.png)
 
 ![Add Record Google Sheets](README.images/google.sheets.added.png)
 
-All other added records in Google Sheets
+All other added records in Google Sheets.
 ![Add Records Google Sheets](README.images/added.records.googlesheets.png)
 
 - **View Records** – Displays all stored training records.
@@ -122,14 +122,14 @@ Invalid Menu Choice Validation
 ![Input Menu Choice Validation](README.images/invalid.menu.choice.png)
 
 
-Invalid Employee input Validation:
+Invalid Employee Input Validation:
 ![Blank Employee Validation](README.images/blank.employee.validation.png)
 
 Invalid Training name input Validation:
 ![Blank Training name Validation](README.images/blank.training.name.validation.png)
 
 
-Invalid status: Validation
+Invalid status: validation
 
 ![Status Input Validation](README.images/invalid.status.validation.png)
 
@@ -157,7 +157,7 @@ Each row in the spreadsheet represents a single training record and is synchroni
 
 ## Flow Chart
 
-In the creation of the Empployee Training Tracker program i created a flowchart to show the overall workflow and its programme logic.
+In the creation of the Employee Training Tracker program, I created a flowchart to show the overall workflow and its programme logic.
 Below is an image of the flowchart:
 
 
@@ -165,7 +165,7 @@ Below is an image of the flowchart:
 
 ## Testing
 
-Testing was used to ensure quality and correct coding in order to create a functioning programme for our users experience.
+Testing was used to ensure quality and correct coding in order to create a functioning programme for our user's experience.
 It includes manual testing, PEP8 validation, User story testing and testing for bugs.
 
 Please refer to [**_here_**](TESTING.md) for more information on testing the programme.
@@ -179,7 +179,7 @@ Please refer to [**_here_**](TESTING.md) for more information on testing the pro
 
 ### Libraries 
 - gspread - Used to read, write and delete data.
-- google-auth - Used to authenticate the application Google Sheets.
+- google-auth - Used to authenticate the application with Google Sheets.
 - datetime - Used to automatically record the date and time of each training record that is created.
 
 ### APIs
@@ -187,14 +187,14 @@ Please refer to [**_here_**](TESTING.md) for more information on testing the pro
 
 ### Development Tools
 - Visual Studio Code
-- Github
+- GitHub
 - Git
 - Heroku
-- Google Clout Platform
+- Google Cloud Platform
 
 ### Python Packages
 - Autopep8 - Used to format the code according to PEP 8 Guidelines.
-- Pylance - Used for code analysi and IntelliSense during development. 
+- Pylance - Used for code analysis and IntelliSense during development. 
 
 ### Validation
 - CI Python Linter (PEP8)
@@ -210,19 +210,19 @@ Please refer to [**_here_**](TESTING.md) for more information on testing the pro
 This project was deployed to Heroku using the following steps:
 
 - Sign in to your Heroku account.
-- Select **New** and choose **create new app**.
+- Select **New** and choose **Create new app**.
 - Enter a unique application name and select the appropriate region.
 - Click **Create app**.
 - Open the **Settings** tab.
 - Under **Config Vars**, add:
  - 'PORT' with the value '8000'.
- - 'CREDS' with the value content of the 'creds.json' file.
+ - 'CREDS' with the value of the content of the 'creds.json' file.
 - Under **Buildpacks**, add:
  - Python
  - Node.js
 - Open the **Deploy** tab.
-- Choose **Github** as the deployment method.
-- Connect the Github repository that contains the project.
+- Choose **GitHub** as the deployment method.
+- Connect the GitHub repository that contains the project.
 - Click **Deploy Branch**
 - Once the deployment is complete, click **Open App** to launch the application. 
 
@@ -237,8 +237,8 @@ This project was deployed to Heroku using the following steps:
 
 Future improvements that could be added to the application include:
 - Edit an existing training record instead of deleting or re-entering the data.
-- Filter the training record according by training status.
-- Sort records alphabetically order or by training date.
+- Filter the training record according to training status.
+- Sort records alphabetically or by training date.
 - Generate more detailed statistics or charts to help monitor the data.
 - Add user authentication for security reasons so only authorised users can manage the data.
 
@@ -248,7 +248,7 @@ Below you will find credit references to my sources for content, media and feedb
 
 - Code Institute Python Essentials template.
 - Code Institute mock terminal template for Heroku deployment.
-- Google Sheets API and the gspread python library was used to store, retrieve and manage data.
+- Google Sheets API and the gspread Python library were used to store, retrieve and manage data.
 
 Others
 - diagrams.net (flowchart)

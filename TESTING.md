@@ -7,7 +7,7 @@ The following tests were completed:
 
 ![Testing Menu](README.images/test-menu.png)
 
-The above screenshot demonstrated input validation and successful programme execusion.
+The above screenshot demonstrates input validation and successful programme execution.
 
 ### PEP8 Validation
 
@@ -20,7 +20,7 @@ During development, the application successfully passed the PEP8 validation with
 
 During development, I attempted to resolve all PEP8 warnings. However, some of the changes 
 made to fix line-length warnings caused the application to stop running correctly. To keep 
-the final project stable and functional, I reverted back to the last working version of the code.
+the final project stable and functional, I reverted to the last working version of the code.
 
 The final version contains minor line-length warnings, but these do not affect the functionality of the application. 
 The application runs successfully.
