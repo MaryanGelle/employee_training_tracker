@@ -262,7 +262,7 @@ Others
 
 ## Acknowledgments 
 
-- My Code Institute mentor for their guidance, encouragement and valuable feedback throughout the project.
+- My Code Institute mentor Marcel Mulders for his guidance, encouragement and valuable feedback throughout the project.
 - The Code Institute tutors and Student Care for their support during the development of this project.
 - My family and friends for testing the application and providing valuable feedback.
 
