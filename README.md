@@ -81,7 +81,7 @@ The application focuses on:
 
 The Employee Training Tracker includes the following features:
 
-- **Add Training Record** – Allows users to add a new employee training record to Google Sheets.
+- **Add Training Record**: Allows users to add a new employee training record to Google Sheets.
   For example, Users can add a new employee training record by entering the employee name, training name and training status.
 
 ![Add Record](README.images/added.record.png)
@@ -91,30 +91,30 @@ The Employee Training Tracker includes the following features:
 All other added records in Google Sheets.
 ![Add Records Google Sheets](README.images/added.records.googlesheets.png)
 
-- **View Records** – Displays all stored training records.
+- **View Records**: Displays all stored training records.
 
 ![View Record](README.images/view.record.png)
 
 
-- **Search Records** – Searches for an employee's training record by name.
+- **Search Records**: Searches for an employee's training record by name.
 
 Search Records:
 
 ![Search Record Found](README.images/search.found.png)
 
-- **Analyse Records** – Calculates and displays training statistics and completion percentages.
+- **Analyse Records**: Calculates and displays training statistics and completion percentages.
 
 ![Analyse Record](README.images/analyse.records.png)
 
 
-- **Delete Records** – Removes selected training records from both the application and Google Sheets.
+- **Delete Records**: Removes selected training records from both the application and Google Sheets.
 
 Delete successfully record
 
 ![Delete Record](README.images/delete.successfully.png)
 
 
-- **Input Validation** – Prevents empty inputs and validates training status before saving data.
+- **Input Validation**: Prevents empty inputs and validates training status before saving data.
 
 Invalid Menu Choice Validation
 
@@ -183,9 +183,9 @@ Please refer to [**_here_**](TESTING.md) for more information on testing the pro
 - Python 3
 
 ### Libraries 
-- gspread - Used to read, write and delete data.
-- google-auth - Used to authenticate the application with Google Sheets.
-- datetime - Used to automatically record the date and time of each training record that is created.
+- gspread: Used to read, write and delete data.
+- google-auth: Used to authenticate the application with Google Sheets.
+- datetime: Used to automatically record the date and time of each training record that is created.
 
 ### APIs
 - Google Sheets API
@@ -198,8 +198,8 @@ Please refer to [**_here_**](TESTING.md) for more information on testing the pro
 - Google Cloud Platform
 
 ### Python Packages
-- Autopep8 - Used to format the code according to PEP 8 Guidelines.
-- Pylance - Used for code analysis and IntelliSense during development. 
+- Autopep8:  Used to format the code according to PEP 8 Guidelines.
+- Pylance: Used for code analysis and IntelliSense during development. 
 
 ### Validation
 - CI Python Linter (PEP8)
@@ -207,6 +207,7 @@ Please refer to [**_here_**](TESTING.md) for more information on testing the pro
 ### Other
 
 - diagrams.net (flowchart)
+- Grammarly: used to proofread the README documentation.
 
 [Back to top](#contents)
 
